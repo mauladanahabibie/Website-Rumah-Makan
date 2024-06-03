@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waroeng Pak Dedy</title>
+    <link rel="stylesheet" href="css/purchase.css" />
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <nav>
+      <a href=""><h2>Waroeng Pak Dedy</h2></a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="contact" class="contact">
+      <h5>Order Now</h5>
+      <h1>Mudah Dan Cepat</h1>
+      <form action="" name="order-form" class="container-contact">
+        <div class="row-contact-1">
+          <div class="form">
+            <span>Your Name</span>
+            <input type="text" name="nama" required placeholder="Name"/>
+          </div>
+          <div class="form">
+            <span>Makanan</span>  
+            <select type="text" name="makanan" id="makanan">
+                <option selected disabled value="">Pilih Makanan</option>
+                <option>Mie Ayam Komplit</option>
+                <option>Mie Ayam Jamur</option>
+                <option>Mie Ayam Pangsit</option>
+                <option>Mie Ayam Bakso</option>
+                <option>Mie Ayam Bakso Jamur</option>
+            </select>
+          </div>
+          <div class="form">
+            <span>Minuman</span>
+            <select type="text" name="minuman" id="minuman">
+              <option selected disabled value="">Pilih Minuman</option>
+              <option>Es Temulawak</option>
+              <option>Es Jeruk</option>
+              <option>Es</option>
+          </select>
+          </div>
+          <div class="form height">
+            <span>Location</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.783839540449!2d114.36104399999999!3d-8.2244803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15b0ab22fc253%3A0xa16f91e987e4434f!2sMie%20Ayam%20Jamur%20Pak%20Dedy!5e0!3m2!1sid!2sid!4v1716049533083!5m2!1sid!2sid" width="555" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="form submit-btn">
+            <button type="submit">Order Now</button>
+          </div>
+        </div>
+        <div class="row-contact-2">
+          <div class="form">
+            <span>Your Number</span>
+            <input type="number" value="+" name="telepon" required placeholder="Number"/>
+          </div>
+          <div class="form">
+            <span>Jumlah Makanan Dan Minuman</span>
+            <input type="text" name="berapa" required placeholder="Berapa"/>
+          </div>
+          <div class="form">
+            <span>Waktu</span>
+            <input type="datetime-local" name="waktu" required placeholder="Date"/>
+          </div>
+          <div class="form height">
+            <span>Note</span>
+            <textarea placeholder="Masukan Note" name="note" id="" cols="30" rows="15"></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bx-up-arrow-alt'></i></button>
+    <script src="purchase.js"></script>
+    <script src="menu.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxhSpU8fAe4PQ6R4cDKEr5rzmw9lCVun1dMCuJ_YDuJ2PChTxAaeushantzbI9c7MIXaQ/exec'
+      const form = document.forms['order-form']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            form.reset();
+           console.log('Success!', response);})
+           .catch(error => {
+            form.reset();
+            console.error('Error!', error.message);})
+      })
+    </script>
+  </body>
+</html>

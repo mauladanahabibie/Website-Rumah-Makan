@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=My+Soul&display=swap");
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+  scrollbar-overflow-style: none;
+}
+:root {
+  --bg-utama: #ffffff;
+  --bg-sekunder: #d6dfec;
+  --bold-text: #dcdcdc;
+  --text: #515151;
+}
+/* Navbar */
+nav {
+  padding: 15px 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bold-text);
+}
+nav a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Lora", serif;
+}
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+nav ul li a {
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+.nav-active {
+  font-weight: 600;
+}
+/* Header */
+header {
+  display: flex;
+  padding: 50px 80px 110px 120px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(../assets/bg2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.title-header {
+  margin: auto 0;
+}
+.image-header img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+.image-header-2 {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  z-index: 2;
+}
+.title-header h2 {
+  font-size: 40px;
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  line-height: 9px;
+}
+.title-header h3 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.title-header h5 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.title-header h6 {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 100px;
+}
+/* Menu */
+.container-main {
+  padding: 20px 80px 0px 80px;
+  display: flex;
+  background-color: var(--bg-sekunder);
+  justify-content: center;
+}
+.container-main img {
+  width: 320px;
+  height: 320px;
+  /* margin-top: 20px; */
+  /* margin-bottom: -120px; */
+  margin-top: 28px;
+  margin-right: -10px;
+}
+.content-img {
+  width: 400px;
+  margin: 15px 0;
+  display: block;
+  padding: 20px;
+}
+.content-img h6 {
+  font-size: 18px;
+  /* margin-top: -20px; */
+  margin-bottom: 10px;
+  font-family: "Lora", serif;
+}
+.content-img h2 {
+  width: 280px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.content-img .oi {
+  width: 400px;
+  font-weight: 300;
+  margin: 10px 0;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+.content-img ul {
+  margin-left: -15px;
+}
+.content-img ul li {
+  list-style-type: none;
+}
+.content-img ul li p {
+  width: 675px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+.content-img button {
+  padding: 14px;
+  background-color: var(--bg-utama);
+  border-radius: 7px;
+  margin-top: 20px;
+  border: none;
+  width: 120px;
+}
+.content-img button a {
+  text-decoration: none;
+  /* padding: 10px; */
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+}
+/* Figure  */
+figure {
+  background-color: #c4dce0;
+}
+.title-figure {
+  padding: 45px 0 0 0;
+  /* margin-top: -50px; */
+}
+.title-figure h2 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "My Soul", cursive;
+  font-weight: 500;
+}
+.title-figure p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+.container-menu {
+  padding: 2px 35px 50px 35px;
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  /* background-color: var(--bold-text); */
+}
+.container-menu.v2 {
+  justify-content: center;
+  gap: 50px;
+}
+.menu {
+  margin-top: 60px;
+  background-color: #e8e7e7;
+  width: 230px;
+  height: 280px;
+  border-radius: 7px 80px 40px 40px;
+  padding: 0 15px 260px 15px;
+  box-shadow: 0 0 15px 3px cadetblue;
+}
+.menu img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  top: -25px;
+  left: 70px;
+  width: 130px;
+  height: 135px;
+  line-height: 5px;
+}
+/* .container-menu-2 .menu{
+    border-radius: 25px 80px 40px 40px;
+}
+.container-menu-2 .menu img{
+    top: -45px;
+    left: -60px;
+} */
+.menu h2 {
+  margin-top: -100px;
+  margin-bottom: 70px;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.menu h2 span {
+  font-weight: 600;
+  font-size: 15px;
+  top: -15px;
+  left: 5px;
+  position: relative;
+}
+.container-menu-2 .menu h2 {
+  margin-top: -110px;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-right: -70px;
+}
+.container-menu-2 .menu h2 span {
+  margin-top: -45px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.menu h3 {
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 5px;
+  font-family: "Lora", serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.menu p {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.menu .menu-btn h6 {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+  border-radius: 15px;
+}
+.menu .menu-btn a {
+  background-color: #515151;
+  padding: 10px;
+  border-radius: 15px;
+  color: #d6dfec;
+}
+.menu-btn {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 5px 10px; */
+}
+/* .container-menu-2{
+    padding: 20px 80px 60px 80px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-sekunder);
+}
+.container-menu-2 .menu.v2 {
+    margin-left: 30px;
+    margin-right: 30px;
+} */
+
+/* Section */
+section {
+  padding: 85px 80px 50px 80px;
+  text-align: center;
+  /* background-color: #d1cbcb; */
+  margin-top: -50px;
+}
+.title-section h2 {
+  font-family: "My Soul", cursive;
+  font-size: 40px;
+  font-weight: 500;
+}
+.title-section p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+.container-section {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.card-section {
+  background-color: var(--bg-sekunder);
+  width: 300px;
+  padding: 20px;
+  margin: 30px 10px;
+  text-align: center;
+  border-radius: 14px;
+}
+.card-section img {
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin: 0 auto;
+}
+.card-section h2 {
+  margin-top: 12px;
+  font-family: "Lora", serif;
+}
+.card-section p {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+/* Footer */
+footer {
+  background-color: var(--bg-sekunder);
+  color: #c4dce0;
+  padding: 30px 80px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer div h2 {
+  font-family: "My Soul", cursive;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 15px;
+  color: var(--text);
+}
+footer p {
+  font-size: 14px;
+  font-size: 14px;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+footer div nav {
+  background-color: transparent;
+  margin: 7px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #c4dce0;
+  text-align: center;
+}
+
+/* responsive navbar footer */
+@media (max-width: 600px) {
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  footer nav ul li {
+    margin: 10px 0;
+  }
+  footer nav ul li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0; /* Place the button at the bottom */
+  right: 0; /* Place the button at the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  margin-right: 30px;
+  margin-bottom: 15px;
+  background-color: var(--text); /* Red background color */
+  color: white; /* White text color */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 7px;
+  transition: 0.3s;
+}
+#myBtn i {
+  font-size: 22px;
+}
+#myBtn:hover {
+  background-color: #7e7c7c; /* Dark grey background color on hover */
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=My+Soul&display=swap');
+
+*,html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+:root {
+    --bg-utama:#FFFFFF;
+    --bg-sekunder:#D6DFEC;
+    --bold-text:#DCDCDC;
+    --text:#515151;    
+}
+/* Navbar */
+nav {
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DCDCDC;
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Lora", serif;
+}
+nav ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+}
+/* Header Kanan*/
+.title{
+    text-align: center;
+    padding: 20px 80px;
+}
+/* Contact */
+.contact{
+    padding: 40px 70px;
+    /* background-color: red; */
+}
+.contact h5,h1 {
+    text-align: center;
+}
+.contact h5{
+    color: var(--text);
+    font-family: "My Soul", cursive;
+    font-size: 25px;
+    font-weight: 700;
+}
+.contact h1{
+    font-family: "Lora", serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.container-contact {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #AEC1BD;
+}
+.row-contact-1,.row-contact-2{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    /* row-gap: 20px; */
+    /* background-color: yellow; */
+}
+.form span{
+    color: #0D9276;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.form input {
+    background-color: #C4DCE0;
+    width: 555px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+.form select {
+    background-color: #C4DCE0;
+    /* width: 555px; */
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+.form select option{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.form.height iframe{
+    border-radius: 5px;
+    outline: 1px solid #40A2E3;
+}
+.form.height textarea{
+    background-color: #C4DCE0;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.form.submit-btn button{
+    background-color: #C4DCE0;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#myBtn {
+    display: none; 
+    position: fixed; /* Fixed/sticky position */
+    bottom: 0; /* Place the button at the bottom */
+    right: 0; /* Place the button at the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    margin-right: 30px;
+    margin-bottom: 15px;
+    background-color: var(--text); /* Red background color */
+    color: white; /* White text color */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 7px;
+    transition: 0.3s;
+  }
+  #myBtn i {
+    font-size: 22px;
+  }
+  #myBtn:hover {
+    background-color: #7e7c7c; /* Dark grey background color on hover */
+  }

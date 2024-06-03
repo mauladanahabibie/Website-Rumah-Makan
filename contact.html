@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waroeng Pak Dedy</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href=""><h2>Waroeng Pak Dedy</h2></a>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="nav-active">Contact</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="title">
+        <h2>Feedback</h2>
+        <h3>Contact</h3>
+      </div>
+      <div class="container-contact">
+        <div class="card-contact">
+          <div class="container-row1">
+            <div class="row1">
+              <div class="logo">
+                <img src="assets/location.png" alt="" />
+              </div>
+              <div class="title-row">
+                <h2>Location</h2>
+                <p>Jl. Badung No.9, RT.008/RW.003, Taman Baru, Kec. Banyuwangi, Kabupaten Banyuwangi, Jawa Timur 68416</p>
+              </div>
+            </div>
+            <div class="row1">
+              <div class="logo">
+                <img src="assets/email.png" alt="" />
+              </div>
+              <div class="title-row">
+                <h2>Email</h2>
+                <p>mauladanahabibi@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="row1">
+              <div class="logo">
+                <img src="assets/whatsapp.png" alt="" />
+              </div>
+              <div class="title-row">
+                <h2>Telepon</h2>
+                <p>0853-3615-6856</p>
+              </div>
+            </div>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.783839622052!2d114.3584690750096!3d-8.224480291808208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15b0ab22fc253%3A0xa16f91e987e4434f!2sMie%20Ayam%20Jamur%20Pak%20Dedy!5e0!3m2!1sid!2sid!4v1715272553004!5m2!1sid!2sid"
+            width="380"
+            height="240"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="card-contact contact2">
+          <form action="" name="contact-dedy">
+            <div class="row">
+              <label for="">Name Anda</label>
+              <input type="text" placeholder="Masukan Nama" name="nama" required />
+              <label class="nomor" for="">Nomor Kontak Anda</label>
+              <input type="number" placeholder="+62****" name="nomor" required />
+            </div>
+            <label for="">Masukan Email</label>
+            <input type="email" placeholder="Masukan Email" name="email" required />
+            <label for="">Pesan</label>
+            <textarea name="pesan" placeholder="Masukan Pesan" id="" required></textarea>
+            <button type="submit">Order</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <p>Copyright &copy; <span>2024 Waroeng Pak Dedy. </span> All Rights Reserved</p>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bx bx-up-arrow-alt"></i></button>
+    <script src="menu.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwi3g2dbkFs_SKX6h9Fdber-eXt3DJYAwvdMsaBXCDsBBqevrIZSRwVvrO6VxuZMa0MLA/exec'
+      const form = document.forms['contact-dedy']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            form.reset();
+           console.log('Success!', response);})
+           .catch(error => {
+            form.reset();
+            console.error('Error!', error.message);})
+      })
+    </script>
+  </body>
+</html>
