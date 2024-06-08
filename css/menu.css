@@ -8,7 +8,7 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   text-decoration: none;
-  scrollbar-overflow-style: none;
+  scroll-behavior: smooth;
 }
 :root {
   --bg-utama: #ffffff;

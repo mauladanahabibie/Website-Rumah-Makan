@@ -7,6 +7,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 :root {
     --bg-utama:#FFFFFF;
@@ -96,6 +97,7 @@ nav ul li a{
     padding: 10px;
     outline: none;
 }
+
 .form select {
     background-color: #C4DCE0;
     /* width: 555px; */
