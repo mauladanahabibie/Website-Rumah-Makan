@@ -1,1 +1,1 @@
-Website ini ditujukan untuk pengguna yang berada di luar kota banyuwangi maupun yang berada didalam kota. Dengan adanya website ini semoga dapat mempermudah dalam mengetahui lebih lanjut tentang Blambangan
+Website ini ditujukan untuk pengguna yang berada di luar kota banyuwangi maupun yang berada didalam kota. Dengan adanya website ini semoga dapat mempermudah dalam mengetahui lebih lanjut tentang Rumah Makan Pak Dedy. Nikmati sensati lezat dan gurih dengan Mie Ayam spesial kami! 🍜 dengan harga terjangakau 
