@@ -1,0 +1,1 @@
+Website ini ditujukan untuk pengguna yang berada di luar kota banyuwangi maupun yang berada didalam kota. Dengan adanya website ini semoga dapat mempermudah dalam mengetahui lebih lanjut tentang Blambangan
